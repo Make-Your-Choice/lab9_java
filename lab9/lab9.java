@@ -13,7 +13,7 @@ public class lab9 { //основной класс
 		special[] spec_offer1 = new special[n];
 		for(int i = 0; i < n; i++)
 		{
-			spec_offer1[i] = new special();
+			spec_offer1[i] = new special(); //вызов конструктора без параметров
 		}
 		System.out.printf("Input title: ");
 		s1 = in.next();
@@ -27,7 +27,7 @@ public class lab9 { //основной класс
 		y = in.nextInt();
 		System.out.printf("Input popularity: ");
 		z = in.nextInt();
-		book_store book1 = new book_store(s1, s2, s3, x, y, z, n, spec_offer1);
+		book_store book1 = new book_store(s1, s2, s3, x, y, z, n, spec_offer1); //вызов конструктора с параметрами
 		in.close();
 		book1.get_title();
 		book1.get_author();
@@ -60,7 +60,7 @@ public class lab9 { //основной класс
 		System.out.println("\nMassive using constructor with a single parameter\n");
 		for(int i = 0; i < 2; i ++)
 		{
-			spec_offer2[i] = new special(10);
+			spec_offer2[i] = new special(10); //вызов конструктора с одним параметром для создания массива
 		}
 		System.out.println("\nSpecial offers\n");
 		for(int i = 0; i < 2; i ++)

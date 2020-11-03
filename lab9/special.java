@@ -1,14 +1,14 @@
 public class special {
 	int bonus_num; //число бонусов
 	int continuation; //длительность в днях
-	public special() { //конструктор ьез параметров
+	public special() { //конструктор без параметров
 		this.bonus_num = 5;
 	}
-	public special(int a) {
+	public special(int a) { //конструктор с параметром для создания массива
 		this.bonus_num = a;
 		this.continuation = 1;
 	}
-	public void output() {
+	public void output() { //вывод 
 		System.out.printf("Number of bonuses: %d\nContinuation: %d\n", bonus_num, continuation);
 	}
 	public void reduce_bonus() { //сокращение числа бонусов
